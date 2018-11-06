@@ -1,0 +1,54 @@
+/*
+ Theme Name:   laurel-child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  laurel Child Theme
+ Author:       Akira Ichinose
+ Author URI:   http://example.com
+ Template:     laurel
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  laurel-child
+*/
+
+/* [18.10.15 Ichi]カテゴリートップページのカスタマイズ */
+/*  1.カテゴリー名を左寄せ（下のsp-containerの写真左端と合わせる） */
+/*  2.カテゴリー説明を追加                                    */
+.archive-box {
+    text-align: left;
+    border-bottom: 1px solid;
+    border-color: #eee;
+    padding: 42px 0 40px 20px;  /* 上 右 下 左　左の20pxはsp-containerの写真のpadding分 */
+    background: #f6f6f6;
+    max-width: 1200px; /* sp-containerの定義 */
+    margin: 0 auto;    /* sp-containerの定義 */
+}
+
+.category-description {
+    margin-top: 40px;
+/*  text-align: center; */
+  }
+
+  /* [18.11.01 Ichi]プラグイン AddToAny Share Buttons カスタマイズ アイコンセンター寄せ */
+.addtoany_share_save_container { 
+    text-align:center;
+ }
+
+/* [18.11.01 Ichi]タイトル書体をItalic（斜体）から通常（normal)に変更 */
+ .post-header h2 a, .post-header h1{
+	color:#000;
+	font-size:28px;
+/*	font-style:italic; */
+    font-style:normal;
+	-o-transition:.25s;
+	-ms-transition:.25s;
+	-moz-transition:.25s;
+	-webkit-transition:.25s;
+	transition:.25s;
+}
+
+/* [18.11.02 Ichi]サイドバーのAbout meのテキストを中央寄せから左寄せに変更 */
+.about-widget {
+    text-align: left;
+}
